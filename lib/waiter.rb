@@ -1,5 +1,5 @@
 class Waiter
-  
+
   attr_accessor :name, :yrs_experience
   @@all = []
 
@@ -27,7 +27,7 @@ class Waiter
 
     def meals
       Meal.all.select do |meal|
-        meal.waiter == self 
+        meal.waiter == self
       end
     end
 end
